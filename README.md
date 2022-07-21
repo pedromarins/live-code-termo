@@ -11,8 +11,11 @@ Lista de execução de tarefas para resolver o problema
 - [x] Sortear uma palavra
 - [X] Interface para entrar 5 letras
 - [X] Enviar a palavra para verificação
-- [ ] Verificar se a palavra digitada existe na lista
-    - [ ] Normalizar as palavras digitadas
+- [X] Verificar se a palavra digitada existe na lista
+    - [X] Se a palvra digitada não for válida, dar um erro
+    - [X] Normalizar as palavras digitadas
+    - [X] Verificar se a palavra digitada existe na lista
+
 - [ ] Comparar a palavra enviada com a palavra sorteada
     - [ ] Normalizar as palavras comparadas
 
