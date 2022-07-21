@@ -7,7 +7,7 @@ Inspirado no jogo [Termo](https://term.ooo/)
 Lista de execução de tarefas para resolver o problema
 
 - [X] Quebrar o problema em etapas
-- [ ] Lista de palavras com 5 letras
+- [X] Lista de palavras com 5 letras
 - [ ] Sortear uma palavra
 - [ ] Interface para entrar 5 letras
 - [ ] Verificar um envio de palavra se existe na lista
