@@ -10,7 +10,7 @@ Lista de execução de tarefas para resolver o problema
 - [X] Lista de palavras com 5 letras
 - [x] Sortear uma palavra
 - [X] Interface para entrar 5 letras
-- [X] Capturar a palavra digitada
+- [X] Enviar a palavra para verificação
 - [ ] Verificar se a palavra digitada existe na lista
     - [ ] Normalizar as palavras digitadas
 - [ ] Comparar a palavra enviada com a palavra sorteada
@@ -24,7 +24,7 @@ Lista de execução de tarefas para resolver o problema
 
 - [ ] Limitar número de tentativas
 - [ ] Dar um score para a rodada
-- [ ] Limpar acentos na comparação
+- [ ] Aceitar acentos na comparação
 - [ ] Melhorar a lista de palavras
 - [ ] Exibir as regras
 - [ ] Teclado virtual
