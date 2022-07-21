@@ -8,10 +8,12 @@ Lista de execução de tarefas para resolver o problema
 
 - [X] Quebrar o problema em etapas
 - [X] Lista de palavras com 5 letras
-- [ ] Sortear uma palavra
+- [x] Sortear uma palavra
 - [ ] Interface para entrar 5 letras
 - [ ] Verificar um envio de palavra se existe na lista
+    - [ ] Normalizar as palavras digitadas
 - [ ] Comparar a palavra enviada com a palavra sorteada
+    - [ ] Normalizar as palavras comparadas
 
 - [ ] Dar uma resposta visual para o resultado da comparação
     - [ ] Se acertar alguma letra na posição correta dar uma resposta
