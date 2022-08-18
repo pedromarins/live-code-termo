@@ -39,5 +39,7 @@ tentativa.addEventListener("submit", (event) => {
     } else {
         console.error("Digite uma palavra com 5 caracteres.")
     }
+
+    chute.value = ''
 })
 
