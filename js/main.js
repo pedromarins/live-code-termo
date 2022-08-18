@@ -37,7 +37,7 @@ tentativa.addEventListener("submit", (event) => {
             console.error("Palavra não existe.")
         }
     } else {
-        console.error("Digite uma palavra com 5 caracteres.")
+        document.querySelector(".area-resposta").textContent = "Digite uma palavra com 5 caracteres!"
     }
 
     chute.value = ''
