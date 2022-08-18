@@ -3,6 +3,8 @@ const palavrasTratadas = palavras.map((element) => {
     return element.toUpperCase().normalize('NFD').replace(/[^\w\s]/gi, '')
 })
 
+let chutesValidos = []
+
 const palavraSorteada = (function (){
     const min = 0
     const max = palavras.length
@@ -21,12 +23,15 @@ tentativa.addEventListener("submit", (event) => {
 
     // Tratar o valor do input para retirar acentos, espaços e para deixar tudo maiúsculo
     let chuteTratado = chute.value.toUpperCase().normalize('NFD').replace(/[^\w\s]/gi, '').replace(" ", "")
+    
 
     // Se a palavra digitada tiver 5 caracteres
     if(chuteTratado.length == 5) {
         // Se a palavra digitada existe na lista
-        console.log(palavraSorteada)
+        console.log("Palavra sorteada:", palavraSorteada)
         if(palavrasTratadas.find(element => element === chuteTratado)) {
+            chutesValidos.push(chuteTratado)
+            console.log(chutesValidos)
             comparaPalavras(chuteTratado)
         } else {
             atualizaAviso("Palavra não existe.")
@@ -45,7 +50,6 @@ function atualizaAviso(texto) {
 
 
 function comparaPalavras(chuteTratado) {
-    console.log("Palavra existe.")
     const letrasDoChuteTratado = chuteTratado.split('')
     const letrasDapalavraSorteada = palavraSorteada.split('')
     
