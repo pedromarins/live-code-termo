@@ -34,12 +34,16 @@ tentativa.addEventListener("submit", (event) => {
                 console.error("Você errou. Tente novamente.")
             }
         } else {
-            console.error("Palavra não existe.")
+            atualizaAviso("Palavra não existe.")
         }
     } else {
-        document.querySelector(".area-resposta").textContent = "Digite uma palavra com 5 caracteres!"
+        atualizaAviso("Digite uma palavra com 5 caracteres!")
     }
 
     chute.value = ''
 })
+
+function atualizaAviso(texto) {
+    document.querySelector(".area-resposta").textContent = texto
+}
 
