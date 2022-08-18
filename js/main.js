@@ -30,11 +30,10 @@ tentativa.addEventListener("submit", (event) => {
         // Se a palavra digitada existe na lista
         console.log("Palavra sorteada:", palavraSorteada)
         if(palavrasTratadas.find(element => element === chuteTratado)) {
-            chutesValidos.push(chuteTratado)
-            console.log(chutesValidos)
+            registraChute(chuteTratado)
             comparaPalavras(chuteTratado)
         } else {
-            atualizaAviso("Palavra não existe.")
+            atualizaAviso("Palavra não é aceita.")
         }
     } else {
         atualizaAviso("Digite uma palavra com 5 caracteres!")
@@ -60,4 +59,16 @@ function comparaPalavras(chuteTratado) {
             console.error ("Errei a letra " + (i+1))
         }
     }
+}
+
+function registraChute(chuteTratado) {
+    chutesValidos.push(chuteTratado)
+
+    const chuteRegistrado = document.createElement('li')
+    chuteRegistrado.classList.add("chute")
+    chuteRegistrado.textContent = chuteTratado
+    document.querySelector(".chutes-registrados").appendChild(chuteRegistrado)
+
+
+    // 
 }

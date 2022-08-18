@@ -31,7 +31,9 @@ Lista de execução de tarefas para resolver o problema
 - [X] Se acertar alguma letra na posição correta dar uma resposta
     
 - [X] Salvar lista de tentativas do usuário
-- [ ] Exibir as tentativas do usuário
+- [X] Exibir as tentativas válidas do usuário
+
+- [ ] Só exibir o quadro de avisos quando tem conteúdo.
     
 - [ ] Dar uma resposta visual para o resultado da comparação se acertar alguma letra na posição correta dar uma resposta
 

@@ -1,5 +1,5 @@
 body {
-    background: #000000;
+    background: #777777;
     font-family: sans-serif;
     width: 60vw;
     margin: 0 20vw;
@@ -21,4 +21,13 @@ body {
     padding: 0.5em 0;
     color: #FFFFFF;
     margin: 1em 0;
+}
+
+
+.chutes-registrados {
+    list-style: none;
+}
+
+.chute {
+    color: #FFFFFF;
 }
