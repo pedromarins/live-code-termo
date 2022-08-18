@@ -13,6 +13,7 @@ const palavraSorteada = (function (){
 })()
 
 const tentativa = document.querySelector("#tentativa");
+const area = document.querySelector(".area-resposta")
 
 // Enviar o formulário de tentativa
 tentativa.addEventListener("submit", (event) => {
@@ -30,6 +31,7 @@ tentativa.addEventListener("submit", (event) => {
         // Se a palavra digitada existe na lista
         console.log("Palavra sorteada:", palavraSorteada)
         if(palavrasTratadas.find(element => element === chuteTratado)) {
+            area.style.display = "none"
             registraChute(chuteTratado)
             comparaPalavras(chuteTratado)
         } else {
@@ -43,7 +45,8 @@ tentativa.addEventListener("submit", (event) => {
 })
 
 function atualizaAviso(texto) {
-    document.querySelector(".area-resposta").textContent = texto
+    area.textContent = texto
+    area.style.display = "inline-block"
 }
 
 
@@ -68,7 +71,4 @@ function registraChute(chuteTratado) {
     chuteRegistrado.classList.add("chute")
     chuteRegistrado.textContent = chuteTratado
     document.querySelector(".chutes-registrados").appendChild(chuteRegistrado)
-
-
-    // 
 }

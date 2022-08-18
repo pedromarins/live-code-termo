@@ -10,7 +10,7 @@ body {
 .titulo {
     color: #FFFFFF;
     font-size: 1.5em;
-    margin: 0;
+    margin: 0 0 2em;
 }
 
 .area-resposta {
@@ -21,11 +21,14 @@ body {
     padding: 0.5em 0;
     color: #FFFFFF;
     margin: 1em 0;
+    display: none;
 }
 
 
 .chutes-registrados {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .chute {
