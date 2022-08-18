@@ -20,7 +20,7 @@ Lista de execução de tarefas para resolver o problema
 
 - [X] Comparar a palavra enviada com a palavra sorteada
 
-- [ ] Facilitar a digitação voltando para o input
+- [X] Facilitar a digitação voltando para o input
 
 - [ ] Dar uma resposta visual para o resultado da comparação
     - [ ] Se acertar alguma letra na posição correta dar uma resposta
