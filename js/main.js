@@ -22,12 +22,19 @@ tentativa.addEventListener("submit", (event) => {
     // Tratar o valor do input para retirar acentos, espaços e para deixar tudo maiúsculo
     let chuteTratado = chute.value.toUpperCase().normalize('NFD').replace(/[^\w\s]/gi, '').replace(" ", "")
 
-
+    // Se a palavra digitada tiver 5 caracteres
     if(chuteTratado.length == 5) {
+        // Se a palavra digitada existe na lista
+        console.log(palavraSorteada)
         if(palavrasTratadas.find(element => element === chuteTratado)) {
-            console.log("vai comparar")
+            console.log("Palavra existe.")
+            if(chuteTratado === palavraSorteada) {
+                console.log("Você acertou!")
+            } else {
+                console.error("Você errou. Tente novamente.")
+            }
         } else {
-            console.error("Palavra não existe")
+            console.error("Palavra não existe.")
         }
     } else {
         console.error("Digite uma palavra com 5 caracteres.")

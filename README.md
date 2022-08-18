@@ -18,8 +18,9 @@ Lista de execução de tarefas para resolver o problema
 
 - [X] Sortear uma palavra para ser comparada
 
-- [ ] Comparar a palavra enviada com a palavra sorteada
-    - [ ] Normalizar as palavras comparadas
+- [X] Comparar a palavra enviada com a palavra sorteada
+
+- [ ] Facilitar a digitação voltando para o input
 
 - [ ] Dar uma resposta visual para o resultado da comparação
     - [ ] Se acertar alguma letra na posição correta dar uma resposta
@@ -32,3 +33,5 @@ Lista de execução de tarefas para resolver o problema
 - [ ] Melhorar a lista de palavras
 - [ ] Exibir as regras
 - [ ] Teclado virtual
+
+- [ ] Ao acertar a palavra recomeçar o jogo
