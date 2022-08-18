@@ -1,0 +1,24 @@
+body {
+    background: #000000;
+    font-family: sans-serif;
+    width: 60vw;
+    margin: 0 20vw;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.titulo {
+    color: #FFFFFF;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.area-resposta {
+    background: #009AFE;
+    width: 80%;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 0.5em 0;
+    color: #FFFFFF;
+    margin: 1em 0;
+}

@@ -22,6 +22,8 @@ Lista de execução de tarefas para resolver o problema
 
 - [X] Facilitar a digitação voltando para o input
 
+- [X] Fazer o design básico da página
+
 - [ ] Dar uma resposta visual para o resultado da comparação
     - [ ] Se acertar alguma letra na posição correta dar uma resposta
     - [ ] Se acertar alguma letra da palavra na posição errada dar uma resposta
