@@ -3,14 +3,25 @@ const palavrasTratadas = palavras.map((element) => {
     return element.toUpperCase().normalize('NFD').replace(/[^\w\s]/gi, '')
 })
 
+const palavraSorteada = (function (){
+    const min = 0
+    const max = palavras.length
+    let posicao = Math.floor(Math.random() * (max - min)) + min
+    return palavras[posicao].toUpperCase()
+})()
+
 const tentativa = document.querySelector("#tentativa");
 
+// Enviar o formulário de tentativa
 tentativa.addEventListener("submit", (event) => {
     event.preventDefault()
 
+    // Captura o input de texto
     const chute = document.querySelector("#chute");
 
-    chuteTratado = chute.value.toUpperCase().normalize('NFD').replace(/[^\w\s]/gi, '').replace(" ", "")
+    // Tratar o valor do input para retirar acentos, espaços e para deixar tudo maiúsculo
+    let chuteTratado = chute.value.toUpperCase().normalize('NFD').replace(/[^\w\s]/gi, '').replace(" ", "")
+
 
     if(chuteTratado.length == 5) {
         if(palavrasTratadas.find(element => element === chuteTratado)) {
@@ -23,9 +34,3 @@ tentativa.addEventListener("submit", (event) => {
     }
 })
 
-function sortearPalavra() {
-    const min = 0
-    const max = palavras.length
-    let posicao = Math.floor(Math.random() * (max - min)) + min
-    return palavras[posicao].toUpperCase()
-}

@@ -16,6 +16,8 @@ Lista de execução de tarefas para resolver o problema
     - [X] Normalizar as palavras digitadas
     - [X] Verificar se a palavra digitada existe na lista
 
+- [X] Sortear uma palavra para ser comparada
+
 - [ ] Comparar a palavra enviada com a palavra sorteada
     - [ ] Normalizar as palavras comparadas
 
