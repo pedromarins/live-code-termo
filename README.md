@@ -27,7 +27,7 @@ Lista de execução de tarefas para resolver o problema
 - [ ] Dar uma resposta visual para o resultado da comparação
     - [X] Se palavra tem menos que 5 caracteres preencher o aviso
     - [X] Se palavra não existe na lista preencher o aviso
-    - [ ] Se acertar alguma letra na posição correta dar uma resposta
+    - [X] Se acertar alguma letra na posição correta dar uma resposta
     - [ ] Se acertar alguma letra da palavra na posição errada dar uma resposta
     - [ ] Se letra não está na palavra dar uma resposta
 

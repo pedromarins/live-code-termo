@@ -27,12 +27,7 @@ tentativa.addEventListener("submit", (event) => {
         // Se a palavra digitada existe na lista
         console.log(palavraSorteada)
         if(palavrasTratadas.find(element => element === chuteTratado)) {
-            console.log("Palavra existe.")
-            if(chuteTratado === palavraSorteada) {
-                console.log("Você acertou!")
-            } else {
-                console.error("Você errou. Tente novamente.")
-            }
+            comparaPalavras(chuteTratado)
         } else {
             atualizaAviso("Palavra não existe.")
         }
@@ -47,3 +42,18 @@ function atualizaAviso(texto) {
     document.querySelector(".area-resposta").textContent = texto
 }
 
+
+
+function comparaPalavras(chuteTratado) {
+    console.log("Palavra existe.")
+    const letrasDoChuteTratado = chuteTratado.split('')
+    const letrasDapalavraSorteada = palavraSorteada.split('')
+    
+    for(i=0; i<letrasDoChuteTratado.length;i++) {
+        if(letrasDoChuteTratado[i] == letrasDapalavraSorteada[i]) {
+            console.log("Acertei a letra " + (i+1) )
+        } else {
+            console.error ("Errei a letra " + (i+1))
+        }
+    }
+}
