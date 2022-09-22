@@ -24,7 +24,7 @@ Lista de execução de tarefas para resolver o problema
 
 - [X] Fazer o design básico da página
 
-- [ ] Dar uma resposta visual para o resultado da comparação
+- [X] Dar uma resposta visual para o resultado da comparação
     - [X] Se palavra tem menos que 5 caracteres preencher o aviso
     - [X] Se palavra não existe na lista preencher o aviso
 
@@ -35,9 +35,8 @@ Lista de execução de tarefas para resolver o problema
 
 - [X] Só exibir o quadro de avisos quando tem conteúdo.
     
-- [ ] Dar uma resposta visual para o resultado da comparação se acertar alguma letra na posição correta dar uma resposta
-
-
+- [X] Mudar a apresentação visual para as palavras salvas serem exibidas em caixinhas
+- [ ] Dar uma resposta visual para o resultado da comparação das palavras se acertar alguma letra na posição correta
 
 - [ ] Se acertar alguma letra da palavra na posição errada dar uma resposta
     - [ ] Dar uma resposta visual para o resultado da comparação
@@ -45,6 +44,7 @@ Lista de execução de tarefas para resolver o problema
 - [ ] Se letra não está na palavra dar uma resposta
     - [ ] Dar uma resposta visual para o resultado da comparação
 
+- [ ] Deixar responsivo
 - [ ] Limitar número de tentativas
 - [ ] Dar um score para a rodada
 - [ ] Aceitar acentos na comparação

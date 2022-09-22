@@ -31,6 +31,19 @@ body {
     padding: 0;
 }
 
-.chute {
+.chutes-registrados li {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    margin-bottom: 0.5em;
+}
+
+.chutes-registrados span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #282324;
     color: #FFFFFF;
+    border-radius: 6px;
+    line-height: 30px;
 }

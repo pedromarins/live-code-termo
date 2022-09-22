@@ -14,6 +14,7 @@ const palavraSorteada = (function (){
 
 const tentativa = document.querySelector("#tentativa");
 const area = document.querySelector(".area-resposta")
+let letrasDoChuteTratado = []
 
 // Enviar o formulário de tentativa
 tentativa.addEventListener("submit", (event) => {
@@ -32,8 +33,10 @@ tentativa.addEventListener("submit", (event) => {
         console.log("Palavra sorteada:", palavraSorteada)
         if(palavrasTratadas.find(element => element === chuteTratado)) {
             area.style.display = "none"
+            letrasDoChuteTratado = chuteTratado.split('')
+            chutesValidos.push(chuteTratado)
             registraChute(chuteTratado)
-            comparaPalavras(chuteTratado)
+            comparaPalavras()
         } else {
             atualizaAviso("Palavra não é aceita.")
         }
@@ -51,12 +54,11 @@ function atualizaAviso(texto) {
 
 
 
-function comparaPalavras(chuteTratado) {
-    const letrasDoChuteTratado = chuteTratado.split('')
-    const letrasDapalavraSorteada = palavraSorteada.split('')
+function comparaPalavras() {
+    const letrasDaPalavraSorteada = palavraSorteada.split('')
     
     for(i=0; i<letrasDoChuteTratado.length;i++) {
-        if(letrasDoChuteTratado[i] == letrasDapalavraSorteada[i]) {
+        if(letrasDoChuteTratado[i] == letrasDaPalavraSorteada[i]) {
             console.log("Acertei a letra " + (i+1) )
         } else {
             console.error ("Errei a letra " + (i+1))
@@ -65,10 +67,21 @@ function comparaPalavras(chuteTratado) {
 }
 
 function registraChute(chuteTratado) {
-    chutesValidos.push(chuteTratado)
-
     const chuteRegistrado = document.createElement('li')
-    chuteRegistrado.classList.add("chute")
-    chuteRegistrado.textContent = chuteTratado
+
+    for(let elemento of letrasDoChuteTratado) {
+        const quadradoDaLetra = document.createElement('span')
+        quadradoDaLetra.textContent = elemento
+        chuteRegistrado.appendChild(quadradoDaLetra)
+    }
+
     document.querySelector(".chutes-registrados").appendChild(chuteRegistrado)
 }
+
+
+li
+    span
+    span
+    span
+    span
+    span
