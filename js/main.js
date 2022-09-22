@@ -9,8 +9,7 @@ const palavraSorteada = (function (){
     const min = 0
     const max = palavras.length
     let posicao = Math.floor(Math.random() * (max - min)) + min
-    // return palavras[posicao].normalize('NFD').replace(/[^\w\s]/gi, '').replace(" ", "")
-    return "BOÇAL"
+    return palavras[posicao].toUpperCase()
 })()
 
 const formTentativa = document.querySelector("#tentativa");
@@ -38,7 +37,7 @@ formTentativa.addEventListener("submit", (event) => {
             area.style.display = "none"
             letrasDoChuteTratado = chuteTratado.split('')
             chutesValidos.push(chuteTratado)
-            contadorDeTentativas()
+            contadorDeTentativas(chuteTratado)
         } else {
             atualizaAviso("Palavra não é aceita.")
         }
@@ -56,7 +55,7 @@ function atualizaAviso(texto) {
 
 
 
-function comparaPalavras() {
+function comparaLetrasDasPalavras() {
     const letrasDaPalavraSorteada = palavraSorteada.split('')
     let spans = document.querySelectorAll(".chutes-registrados li:last-child span")
 
@@ -86,12 +85,20 @@ function registraChute() {
     document.querySelector(".chutes-registrados").appendChild(chuteRegistrado)
 }
 
-function contadorDeTentativas() {
+function comparaPalavras(chuteTratado) {
+    if(chuteTratado == palavraSorteada) {
+        atualizaAviso("Você acertou!")
+        formTentativa.remove()
+    }
+}
+
+function contadorDeTentativas(chuteTratado) {
     let tentativaAtual = document.querySelector('#tentativaAtual')
 
     if(tentativaAtual.textContent <= numeroTentativas) {
         registraChute()
-        comparaPalavras()
+        comparaLetrasDasPalavras()
+        comparaPalavras(chuteTratado)
         if(tentativaAtual.textContent != numeroTentativas) {
             tentativaAtual.textContent = parseInt(tentativaAtual.textContent) + 1
         } else {

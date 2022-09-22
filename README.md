@@ -44,7 +44,9 @@ Lista de execução de tarefas para resolver o problema
 
 - [X] Limitar número de tentativas
 
-- [ ] Ao acertar a palavra recomeçar o jogo
+(Paramos aqui com o problema do contador estar somando mais um mesmo quando acerta)
+- [ ] Ao acertar a palavra recomeçar o jogo 
+
 - [ ] Aceitar acentos na comparação
 - [ ] Deixar responsivo
 - [ ] Dar um score para a rodada
