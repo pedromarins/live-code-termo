@@ -40,15 +40,15 @@ Lista de execução de tarefas para resolver o problema
 
 - [X] Dar uma resposta visual para o resultado da comparação das palavras se acertar alguma letra da palavra na posição errada
     
-- [ ] Se letra não está na palavra dar uma resposta
-    - [ ] Dar uma resposta visual para o resultado da comparação
+- [X] Dar uma resposta visual para o resultado da comparação se letra não está na palavra dar uma resposta
 
-- [ ] Deixar responsivo
-- [ ] Limitar número de tentativas
-- [ ] Dar um score para a rodada
+- [X] Limitar número de tentativas
+
+- [ ] Ao acertar a palavra recomeçar o jogo
 - [ ] Aceitar acentos na comparação
+- [ ] Deixar responsivo
+- [ ] Dar um score para a rodada
 - [ ] Melhorar a lista de palavras
 - [ ] Exibir as regras
 - [ ] Teclado virtual
 
-- [ ] Ao acertar a palavra recomeçar o jogo

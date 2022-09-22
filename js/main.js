@@ -12,12 +12,14 @@ const palavraSorteada = (function (){
     return palavras[posicao].toUpperCase()
 })()
 
-const tentativa = document.querySelector("#tentativa");
+const formTentativa = document.querySelector("#tentativa");
 const area = document.querySelector(".area-resposta")
 let letrasDoChuteTratado = []
 
+const numeroTentativas = 6
+
 // Enviar o formulário de tentativa
-tentativa.addEventListener("submit", (event) => {
+formTentativa.addEventListener("submit", (event) => {
     event.preventDefault()
 
     // Captura o input de texto
@@ -35,8 +37,7 @@ tentativa.addEventListener("submit", (event) => {
             area.style.display = "none"
             letrasDoChuteTratado = chuteTratado.split('')
             chutesValidos.push(chuteTratado)
-            registraChute(chuteTratado)
-            comparaPalavras()
+            contadorDeTentativas()
         } else {
             atualizaAviso("Palavra não é aceita.")
         }
@@ -57,7 +58,6 @@ function atualizaAviso(texto) {
 function comparaPalavras() {
     const letrasDaPalavraSorteada = palavraSorteada.split('')
     let spans = document.querySelectorAll(".chutes-registrados li:last-child span")
-        console.log("spans", spans)
 
     for(i=0; i<letrasDoChuteTratado.length;i++) {
         
@@ -73,7 +73,7 @@ function comparaPalavras() {
     }
 }
 
-function registraChute(chuteTratado) {
+function registraChute() {
     const chuteRegistrado = document.createElement('li')
 
     for(let elemento of letrasDoChuteTratado) {
@@ -83,4 +83,18 @@ function registraChute(chuteTratado) {
     }
 
     document.querySelector(".chutes-registrados").appendChild(chuteRegistrado)
+}
+
+function contadorDeTentativas() {
+    let tentativaAtual = document.querySelector('#tentativaAtual')
+
+    if(tentativaAtual.textContent <= numeroTentativas) {
+        registraChute()
+        comparaPalavras()
+        if(tentativaAtual.textContent != numeroTentativas) {
+            tentativaAtual.textContent = parseInt(tentativaAtual.textContent) + 1
+        } else {
+            formTentativa.remove()
+        }
+    }
 }
