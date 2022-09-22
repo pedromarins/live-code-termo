@@ -9,7 +9,8 @@ const palavraSorteada = (function (){
     const min = 0
     const max = palavras.length
     let posicao = Math.floor(Math.random() * (max - min)) + min
-    return palavras[posicao].toUpperCase()
+    // return palavras[posicao].normalize('NFD').replace(/[^\w\s]/gi, '').replace(" ", "")
+    return "BOÇAL"
 })()
 
 const formTentativa = document.querySelector("#tentativa");
