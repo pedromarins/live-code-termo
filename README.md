@@ -36,7 +36,7 @@ Lista de execução de tarefas para resolver o problema
 - [X] Só exibir o quadro de avisos quando tem conteúdo.
     
 - [X] Mudar a apresentação visual para as palavras salvas serem exibidas em caixinhas
-- [ ] Dar uma resposta visual para o resultado da comparação das palavras se acertar alguma letra na posição correta
+- [X] Dar uma resposta visual para o resultado da comparação das palavras se acertar alguma letra na posição correta
 
 - [ ] Se acertar alguma letra da palavra na posição errada dar uma resposta
     - [ ] Dar uma resposta visual para o resultado da comparação

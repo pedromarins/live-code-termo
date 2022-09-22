@@ -56,12 +56,14 @@ function atualizaAviso(texto) {
 
 function comparaPalavras() {
     const letrasDaPalavraSorteada = palavraSorteada.split('')
-    
+    let spans = document.querySelectorAll(".chutes-registrados li:last-child span")
+        console.log("spans", spans)
+        // mostrar a letra na caixinha certa
+        // acertou-letra
+
     for(i=0; i<letrasDoChuteTratado.length;i++) {
         if(letrasDoChuteTratado[i] == letrasDaPalavraSorteada[i]) {
-            console.log("Acertei a letra " + (i+1) )
-        } else {
-            console.error ("Errei a letra " + (i+1))
+            spans[i].classList.add("acertou-letra")
         }
     }
 }
@@ -77,11 +79,3 @@ function registraChute(chuteTratado) {
 
     document.querySelector(".chutes-registrados").appendChild(chuteRegistrado)
 }
-
-
-li
-    span
-    span
-    span
-    span
-    span

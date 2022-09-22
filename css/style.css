@@ -47,3 +47,7 @@ body {
     border-radius: 6px;
     line-height: 30px;
 }
+
+.chutes-registrados .acertou-letra {
+    background: #279788;
+}
