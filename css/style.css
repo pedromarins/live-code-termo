@@ -48,6 +48,10 @@ body {
     line-height: 30px;
 }
 
-.chutes-registrados .acertou-letra {
+.chutes-registrados .letra-certa {
     background: #279788;
+}
+
+.chutes-registrados .letra-existe {
+    background: #CF9F62;
 }

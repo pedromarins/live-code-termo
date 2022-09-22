@@ -38,8 +38,7 @@ Lista de execução de tarefas para resolver o problema
 - [X] Mudar a apresentação visual para as palavras salvas serem exibidas em caixinhas
 - [X] Dar uma resposta visual para o resultado da comparação das palavras se acertar alguma letra na posição correta
 
-- [ ] Se acertar alguma letra da palavra na posição errada dar uma resposta
-    - [ ] Dar uma resposta visual para o resultado da comparação
+- [X] Dar uma resposta visual para o resultado da comparação das palavras se acertar alguma letra da palavra na posição errada
     
 - [ ] Se letra não está na palavra dar uma resposta
     - [ ] Dar uma resposta visual para o resultado da comparação
