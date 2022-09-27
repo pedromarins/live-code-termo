@@ -63,12 +63,11 @@ function comparaLetrasDasPalavras() {
         
         if(letrasDoChuteTratado[i] == letrasDaPalavraSorteada[i]) {
             spans[i].classList.add("letra-certa")
-        } else {
-            letrasDaPalavraSorteada.forEach( (elemento) => {
-                if(elemento == letrasDoChuteTratado[i]) {
-                    spans[i].classList.add("letra-existe")
-                }
-            })
+            continue
+        }
+        
+        if(letrasDaPalavraSorteada.some(letra => letra == letrasDoChuteTratado[i])) {
+            spans[i].classList.add("letra-existe")
         }
     }
 }
