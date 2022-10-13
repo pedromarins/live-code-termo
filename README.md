@@ -44,7 +44,8 @@ Lista de execução de tarefas para resolver o problema
 
 - [X] Limitar número de tentativas
 
-(Paramos aqui com o problema do contador estar somando mais um mesmo quando acerta)
+- [X] Criar um contador de tentativas
+
 - [ ] Ao acertar a palavra recomeçar o jogo 
 
 - [ ] Aceitar acentos na comparação
@@ -53,4 +54,3 @@ Lista de execução de tarefas para resolver o problema
 - [ ] Melhorar a lista de palavras
 - [ ] Exibir as regras
 - [ ] Teclado virtual
-

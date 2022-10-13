@@ -14,6 +14,7 @@ const palavraSorteada = (function (){
 
 const formTentativa = document.querySelector("#tentativa");
 const area = document.querySelector(".area-resposta")
+const chance = document.querySelector("#chance")
 let letrasDoChuteTratado = []
 
 const numeroTentativas = 6
@@ -84,9 +85,10 @@ function registraChute() {
     document.querySelector(".chutes-registrados").appendChild(chuteRegistrado)
 }
 
-function comparaPalavras(chuteTratado) {
+function comparaPalavras(chuteTratado, tentativaAtual) {
     if(chuteTratado == palavraSorteada) {
-        atualizaAviso("Você acertou!")
+        atualizaAviso(`Você acertou na tentativa n° ${tentativaAtual}!`)
+        chance.remove()
         formTentativa.remove()
     }
 }
@@ -97,10 +99,14 @@ function contadorDeTentativas(chuteTratado) {
     if(tentativaAtual.textContent <= numeroTentativas) {
         registraChute()
         comparaLetrasDasPalavras()
-        comparaPalavras(chuteTratado)
+        comparaPalavras(chuteTratado, tentativaAtual.textContent)
+
         if(tentativaAtual.textContent != numeroTentativas) {
             tentativaAtual.textContent = parseInt(tentativaAtual.textContent) + 1
         } else {
+            // quando chega no final das tentativas remove o form
+            atualizaAviso(`Você não acertou!`)
+            chance.remove()
             formTentativa.remove()
         }
     }
