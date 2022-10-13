@@ -3,7 +3,7 @@ Estamos criando uma cópia do jogo termo durante o Live CoDe.
 
 Inspirado no jogo [Termo](https://term.ooo/)
 
-Para jogar entre em [Live CoDe Termo](live-code-termo.vercel.app)
+Para jogar entre em [Live CoDe Termo](http://live-code-termo.vercel.app)
 
 ---
 Lista de execução de tarefas para resolver o problema
