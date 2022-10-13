@@ -15,6 +15,7 @@ const palavraSorteada = (function (){
 const formTentativa = document.querySelector("#tentativa");
 const area = document.querySelector(".area-resposta")
 const chance = document.querySelector("#chance")
+const recomecar = document.querySelector("#recomecar")
 let letrasDoChuteTratado = []
 
 const numeroTentativas = 6
@@ -87,9 +88,7 @@ function registraChute() {
 
 function comparaPalavras(chuteTratado, tentativaAtual) {
     if(chuteTratado == palavraSorteada) {
-        atualizaAviso(`Você acertou na tentativa n° ${tentativaAtual}!`)
-        chance.remove()
-        formTentativa.remove()
+        acabouJogo("ganhou", tentativaAtual)
     }
 }
 
@@ -105,9 +104,20 @@ function contadorDeTentativas(chuteTratado) {
             tentativaAtual.textContent = parseInt(tentativaAtual.textContent) + 1
         } else {
             // quando chega no final das tentativas remove o form
-            atualizaAviso(`Você não acertou!`)
-            chance.remove()
-            formTentativa.remove()
+            acabouJogo("perdeu")
         }
     }
 }
+
+function acabouJogo(status, tentativaAtual) {
+    if (status == "perdeu") {
+        atualizaAviso(`Você não acertou!`)
+    } else {
+        atualizaAviso(`Você acertou na tentativa n° ${tentativaAtual}!`)
+    }
+    chance.remove()
+    formTentativa.remove()
+    recomecar.style.display = "block"
+}
+
+recomecar.addEventListener("click", () => {location.reload()})

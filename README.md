@@ -46,7 +46,9 @@ Lista de execução de tarefas para resolver o problema
 
 - [X] Criar um contador de tentativas
 
-- [ ] Ao acertar a palavra recomeçar o jogo 
+- [X] Ao finalizar o jogo dar opção de recomeçar
+
+- [ ] Melhorar o visual do botão de recomeçar
 
 - [ ] Aceitar acentos na comparação
 - [ ] Deixar responsivo

@@ -55,3 +55,7 @@ body {
 .chutes-registrados .letra-existe {
     background: #CF9F62;
 }
+
+#recomecar {
+    display: none;
+}
