@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    background: linear-gradient(45deg, #bdc3c7, #2c3e50);
     font-family: 'Montserrat', sans-serif;
     width: 60vw;
     text-align: center;
@@ -65,7 +65,7 @@ body {
 
 .chutes-registrados li {
     display: flex;
-    gap: 5px;
+    gap: 8px;
     justify-content: center;
     margin-bottom: 0.5em;
 }
