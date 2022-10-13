@@ -8,16 +8,28 @@ body {
     background: linear-gradient(to right, #bdc3c7, #2c3e50);
     font-family: 'Montserrat', sans-serif;
     width: 60vw;
-    margin: 0 20vw;
     text-align: center;
-    padding: 1em 0;
+    padding: 5em;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .titulo {
     color: #FFFFFF;
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin: 0 0 1em;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+#chance {
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 200;
 }
 
 .area-resposta {
