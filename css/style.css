@@ -1,34 +1,69 @@
-html {
-    height: 100vh;
-}
 
 body {
-    background: linear-gradient(to right, #bdc3c7, #2c3e50);
-    font-family: sans-serif;
-    width: 60vw;
-    margin: 0 20vw;
+    height: 100vh;
+    width: 100wv;
+    background: linear-gradient(to right, #283048, #859398);
     text-align: center;
     padding: 1em 0;
-    height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow: hidden;
+
+}
+
+.container {
+    width: 60vw;
+    margin: 0 auto;
 }
 
 .titulo {
+    margin: 0 0 1em;
     color: #FFFFFF;
     font-size: 1.5em;
-    margin: 0 0 1em;
+    letter-spacing: 3px;
 }
 
 .area-resposta {
-    background: #009AFE;
-    width: 80%;
     display: inline-block;
+    width: max-content;
+    margin: 1em auto;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    padding: 0.5em 0;
+    padding: 1em;
     color: #FFFFFF;
-    margin: 1em 0;
     display: none;
 }
 
+#chute {
+    border: none;
+    width: 200px;
+    border-radius: 6px;
+    border-bottom: 0.1rem solid #279788;
+    border-top: 1px solid #279788;
+    color: #000;
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 0.2em;
+    text-align: center;
+}
+
+#chute::placeholder {
+    text-align: center;
+}
+
+.bntEnviar {
+    height: 30px;
+    border: 3px solid #61ba82;
+    border-radius: 6px;
+    color: #277a6f;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.bntEnviar:active {
+    border-color: #38E54D;
+    color: #38E54D;
+    filter: drop-shadow(0 0 12px #00FFC6)
+}
 
 .chutes-registrados {
     list-style: none;
@@ -38,23 +73,27 @@ body {
 
 .chutes-registrados li {
     display: flex;
-    gap: 2px;
-    justify-content: center;
     margin-bottom: 0.5em;
+    justify-content: center;
+    gap: 2px;
 }
 
 .chutes-registrados span {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: #282324;
-    color: #FFFFFF;
     border-radius: 6px;
     line-height: 30px;
+    color: #FFFF;
+    background: #282324;
 }
 
 .chutes-registrados .letra-certa {
     background: #279788;
+}
+
+.chutes-registrados span {
+    width: 50px;
 }
 
 .chutes-registrados .letra-existe {
@@ -63,10 +102,19 @@ body {
 
 #recomecar {
     display: none;
-    border: none;
-    border-radius: 5px;
     margin: 10px 0 0;
+    border: 3px double #000;
+    border-radius: 10px;
     cursor: pointer;
+    color: #FFFF;
+    background: #279788;
+    font-size: 1.1rem;
+}
+
+#recomecar:active {
+    border-color: #38E54D;
+    color: #38E54D;
+    filter: drop-shadow(0rem -0.2rem 3px #00FFC6);
 }
 
 @media (min-width: 1180px) {
@@ -74,5 +122,14 @@ body {
         width: 90vw;
         margin: 0 5vw;
         font-size: 20px;
+    }
+
+}
+
+@media (max-width: 455px) {
+
+    .bntEnviar {
+        width: 40%;
+        margin-top: 30px;
     }
 }

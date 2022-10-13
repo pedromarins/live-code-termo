@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <title>Termo da Comunidade CoDe</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1 class="titulo">Termo da CoDe</h1>
-    <div class="area-resposta">
-        <p id="resposta"></p>
+    <main class="container">
+        <h1 class="titulo">Termo da CoDe</h1>
+        <div class="area-resposta">
+            <p id="resposta"></p>
 
-        <button id="recomecar">Recomeçar o jogo</button>
-    </div>
-    
-    <ul class="chutes-registrados">
-    </ul>
+            <button id="recomecar">Recomeçar o jogo</button>
+        </div>
 
-    <p id="chance">Chance: <span id="tentativaAtual">1</span>/6</p>
-    <form id="tentativa">
-        <input type="text" maxlength="5" id="chute" placeholder="Digite uma palavra!">
-        <input type="submit">
-    </form>
+        <ul class="chutes-registrados">
+        </ul>
+
+        <p id="chance">Chance: <span id="tentativaAtual">1</span>/6</p>
+        <form id="tentativa">
+            <input type="text" maxlength="5" id="chute" placeholder="Digite uma palavra!">
+            <input class="bntEnviar" type="submit" value="Enviar">
+        </form>
+    </main>
     <script src="js/main.js"></script>
 </body>
+
 </html>
