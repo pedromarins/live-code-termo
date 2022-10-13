@@ -20,6 +20,8 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;    
+    font-size: 20px;
 }
 
 .titulo {
@@ -38,9 +40,13 @@ body {
     margin-top: 20px;
 }
 
+#chance #mostraTentativas {
+    font-weight: 400;
+}
+
 .area-resposta {
     background: #009AFE;
-    width: 25%;
+    width: 50%;
     display: inline-block;
     border-radius: 8px;
     padding: 0.5em 0;
@@ -85,7 +91,7 @@ body {
 
 #tentativa {
     position: relative;
-    width: 25%;
+    width: 50%;
     margin-top: 20px;
 }
 
@@ -97,9 +103,10 @@ body {
     border-radius: 5px;
     text-transform: uppercase;
     outline: none;
-    color: #333;
+    color: #666;
     letter-spacing: 1px;
     font-size: 0.9em;
+    font-family: inherit;
 }
 
 #tentativa input::-webkit-input-placeholder {
@@ -114,7 +121,7 @@ body {
     top: 50%;
     right: 3px;
     transform: translateY(-50%);
-    width: 30px;
+    width: 45px;
     height: 90%;
     border-radius: 5px;
     border: none;
@@ -132,16 +139,17 @@ body {
     background: none;
     color: #FFF;
     font-size: 0.8em;
+    font-family: inherit;
 }
 
 #recomecar:hover {
     text-decoration: underline;
 }
 
-@media (min-width: 1180px) {
+/* @media (min-width: 1180px) {
     body {
         width: 90vw;
         margin: 0 5vw;
         font-size: 20px;
     }
-}
+} */
