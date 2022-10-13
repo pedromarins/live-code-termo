@@ -10,7 +10,7 @@ body {
 .titulo {
     color: #FFFFFF;
     font-size: 1.5em;
-    margin: 0 0 2em;
+    margin: 0 0 1em;
 }
 
 .area-resposta {
@@ -58,4 +58,8 @@ body {
 
 #recomecar {
     display: none;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0 0;
+    cursor: pointer;
 }

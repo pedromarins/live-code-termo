@@ -48,11 +48,8 @@ Lista de execução de tarefas para resolver o problema
 
 - [X] Ao finalizar o jogo dar opção de recomeçar
 
-- [ ] Melhorar o visual do botão de recomeçar
+- [X] Melhorar o visual do botão de recomeçar
 
 - [ ] Aceitar acentos na comparação
+
 - [ ] Deixar responsivo
-- [ ] Dar um score para a rodada
-- [ ] Melhorar a lista de palavras
-- [ ] Exibir as regras
-- [ ] Teclado virtual

@@ -14,6 +14,7 @@ const palavraSorteada = (function (){
 
 const formTentativa = document.querySelector("#tentativa");
 const area = document.querySelector(".area-resposta")
+const resposta = document.querySelector("#resposta")
 const chance = document.querySelector("#chance")
 const recomecar = document.querySelector("#recomecar")
 let letrasDoChuteTratado = []
@@ -51,7 +52,7 @@ formTentativa.addEventListener("submit", (event) => {
 })
 
 function atualizaAviso(texto) {
-    area.textContent = texto
+    resposta.textContent = texto
     area.style.display = "inline-block"
 }
 
@@ -117,7 +118,7 @@ function acabouJogo(status, tentativaAtual) {
     }
     chance.remove()
     formTentativa.remove()
-    recomecar.style.display = "block"
+    recomecar.style.display = "inline-block"
 }
 
 recomecar.addEventListener("click", () => {location.reload()})
