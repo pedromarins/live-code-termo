@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;800&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     height: 100vh;
 }
@@ -14,7 +20,6 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    box-sizing: border-box;
 }
 
 .titulo {
@@ -30,16 +35,17 @@ body {
     color: #FFF;
     text-transform: uppercase;
     font-weight: 200;
+    margin-top: 20px;
 }
 
 .area-resposta {
     background: #009AFE;
-    width: 80%;
+    width: 25%;
     display: inline-block;
     border-radius: 8px;
     padding: 0.5em 0;
     color: #FFFFFF;
-    margin: 1em 0;
+    margin-bottom: 2em;
     display: none;
 }
 
@@ -52,19 +58,21 @@ body {
 
 .chutes-registrados li {
     display: flex;
-    gap: 2px;
+    gap: 5px;
     justify-content: center;
     margin-bottom: 0.5em;
 }
 
 .chutes-registrados span {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background: #282324;
     color: #FFFFFF;
     border-radius: 6px;
-    line-height: 30px;
+    line-height: 40px;
+    font-weight: 800;
+    font-size: 1.4em;
 }
 
 .chutes-registrados .letra-certa {
@@ -73,6 +81,46 @@ body {
 
 .chutes-registrados .letra-existe {
     background: #CF9F62;
+}
+
+#tentativa {
+    position: relative;
+    width: 25%;
+    margin-top: 20px;
+}
+
+#tentativa input {
+    display: block;
+    width: 100%;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    outline: none;
+    color: #333;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+#tentativa input::-webkit-input-placeholder {
+    color: #CCC;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+#tentativa button {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 90%;
+    border-radius: 5px;
+    border: none;
+    background: #279788;
+    color: #FFF;
+    cursor: pointer;
 }
 
 #recomecar {
