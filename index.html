@@ -7,22 +7,25 @@
     <title>Termo da Comunidade CoDe</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Ícones do Font Awesome -->
+    <script src="https://kit.fontawesome.com/fe0ca3f893.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1 class="titulo">Termo da CoDe</h1>
     <div class="area-resposta">
         <p id="resposta"></p>
 
-        <button id="recomecar">Recomeçar o jogo</button>
+        <button id="recomecar"><i class="fa-solid fa-rotate-right"></i> Recomeçar o jogo</button>
     </div>
     
     <ul class="chutes-registrados">
     </ul>
 
-    <p id="chance">Chance: <span id="tentativaAtual">1</span>/6</p>
+    <p id="chance">Chance: <span id="mostraTentativas"><span id="tentativaAtual">1</span>/6</span></p>
     <form id="tentativa">
         <input type="text" maxlength="5" id="chute" placeholder="Digite uma palavra!">
-        <input type="submit">
+        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
     </form>
     <script src="js/main.js"></script>
 </body>
