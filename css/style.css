@@ -127,8 +127,15 @@ body {
     display: none;
     border: none;
     border-radius: 5px;
-    margin: 10px 0 0;
+    margin: 16px 0 0;
     cursor: pointer;
+    background: none;
+    color: #FFF;
+    font-size: 0.8em;
+}
+
+#recomecar:hover {
+    text-decoration: underline;
 }
 
 @media (min-width: 1180px) {
