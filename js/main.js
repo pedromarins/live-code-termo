@@ -7,9 +7,9 @@ let chutesValidos = []
 
 const palavraSorteada = (function (){
     const min = 0
-    const max = palavras.length
+    const max = palavrasTratadas.length
     let posicao = Math.floor(Math.random() * (max - min)) + min
-    return palavras[posicao].toUpperCase()
+    return palavrasTratadas[posicao].toUpperCase()
 })()
 
 const formTentativa = document.querySelector("#tentativa");
