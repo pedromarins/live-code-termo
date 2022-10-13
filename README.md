@@ -3,6 +3,8 @@ Estamos criando uma cópia do jogo termo durante o Live CoDe.
 
 Inspirado no jogo [Termo](https://term.ooo/)
 
+Para jogar entre em [Live CoDe Termo](live-code-termo.vercel.app)
+
 ---
 Lista de execução de tarefas para resolver o problema
 
@@ -50,6 +52,6 @@ Lista de execução de tarefas para resolver o problema
 
 - [X] Melhorar o visual do botão de recomeçar
 
-- [ ] Aceitar acentos na comparação
+- [X] Aceitar acentos na comparação
 
-- [ ] Deixar responsivo
+- [X] Deixar responsivo e mais bonito!
