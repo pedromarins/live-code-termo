@@ -16,7 +16,7 @@ body {
     font-family: 'Orbitron', sans-serif;  
     font-size: 1.5em;
     text-shadow: 2px 2px 3px #2c3e50;
-    margin: 0 0 2em;
+    margin: 0 0 1em;
 }
 
 .area-resposta {
@@ -24,12 +24,16 @@ body {
     width: 80%;
     display: inline-block;
     border-radius: 8px;
-    padding: 0.5em 0;
+    padding: 0.5em 1em;
     color: #FFFFFF;
     margin: 1em 0;
     display: none;
 }
 
+#resposta {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 3px black;
+}
 
 .chutes-registrados {
     list-style: none;
@@ -66,8 +70,16 @@ body {
     display: none;
     border: none;
     border-radius: 5px;
-    margin: 10px 0 0;
+    margin: 10px 0;
     cursor: pointer;
+    
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    color: black;
+    box-shadow: 1px 1px 5px black;
 }
 
 #chance, #tentativaAtual {
@@ -107,10 +119,20 @@ input::placeholder {
     box-shadow: 1px 1px 5px #FFFFFF;
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 768px) {
     body {
         width: 90vw;
         margin: 0 5vw;
         font-size: 20px;
+    }
+
+    .area-resposta {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .area-resposta {
+        width: 40%;
     }
 }
