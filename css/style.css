@@ -4,18 +4,19 @@ html {
 
 body {
     background: linear-gradient(to right, #bdc3c7, #2c3e50);
-    font-family: sans-serif;
-    width: 60vw;
-    margin: 0 20vw;
+    width: 90vw;
+    margin: 0 auto;
     text-align: center;
-    padding: 1em 0;
+    padding: 3em 0;
     height: 100vh;
 }
 
 .titulo {
     color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;  
     font-size: 1.5em;
-    margin: 0 0 1em;
+    text-shadow: 2px 2px 3px #2c3e50;
+    margin: 0 0 2em;
 }
 
 .area-resposta {
@@ -67,6 +68,43 @@ body {
     border-radius: 5px;
     margin: 10px 0 0;
     cursor: pointer;
+}
+
+#chance, #tentativaAtual {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 3px black;
+}
+
+#tentativa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#tentativa #chute {
+    width: 230px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+#submit {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #425d79;
+    color: #FFFFFF;
+    box-shadow: 1px 1px 5px #FFFFFF;
 }
 
 @media (min-width: 1180px) {
